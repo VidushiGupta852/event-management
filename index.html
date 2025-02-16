@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Event Management System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management System</h1>
+        <form id="eventForm">
+            <input type="text" id="eventName" placeholder="Event Name" required>
+            <input type="date" id="eventDate" required>
+            <input type="text" id="eventLocation" placeholder="Event Location" required>
+            <textarea id="eventDescription" placeholder="Event Description" rows="4"></textarea>
+            <button type="submit" class="add-btn">Add Event</button>
+        </form>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search Events...">
+            <button id="filterUpcoming" class="control-btn">Show Upcoming</button>
+            <button id="sortAsc" class="control-btn">Sort by Date Asc</button>
+            <button id="sortDesc" class="control-btn">Sort by Date Desc</button>
+        </div>
+
+        <div id="eventList">
+            <h2>Upcoming Events</h2>
+            <ul id="events"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
